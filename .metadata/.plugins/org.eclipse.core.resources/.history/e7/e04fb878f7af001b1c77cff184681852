@@ -1,0 +1,25 @@
+package programmers;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Marathon {
+
+	public static void main(String[] args) {
+
+		Marathon marathon = new Marathon();
+		marathon.solution({"ab","cd","ef","gh"},{"ab","cd","ef"});
+		
+	}
+
+	    public String solution(String[] participant, String[] completion) {
+	       
+	    	Map<String, String> list = new HashMap<String,String>();
+	    	
+	    	
+	    	String answer = "";
+	        return answer;
+	    
+	}
+	
+}

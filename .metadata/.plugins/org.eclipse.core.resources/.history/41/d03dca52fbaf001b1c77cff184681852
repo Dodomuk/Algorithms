@@ -1,0 +1,41 @@
+package programmers;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Marathon {
+
+	public static void main(String[] args) {
+
+		Marathon marathon = new Marathon();
+		String[] participant = {"ab","cd","ef","gh"};
+		String[] completion = {"ab","cd","ef"};
+		
+		System.out.println(marathon.solution(participant,completion));
+		
+	}
+
+	    public String solution(String[] participant, String[] completion) {
+	       
+	    	Map<String, Integer> list = new HashMap<String,Integer>();
+                for(String player : participant)
+	    		list.put(player, 0);
+	    		
+			  
+	    	
+	    	for (int i = 0; i < completion.length; i++) {
+			    for (String key : list.keySet()) {
+					if(key.equals(completion[i])) {
+					    list.remove(key);
+					    list.put(key, 1);
+					}
+				}	
+			}
+	    	System.out.println(list.values().toString());
+	    	
+	    	String answer = list.values().toString();
+	        return answer;
+	    
+	}
+	
+}

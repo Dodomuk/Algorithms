@@ -1,0 +1,19 @@
+package crispied;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Solution {
+    public int solution(String s) {
+    	
+    	Map<String,String> list = new HashMap<String,String>();
+    	
+    	String str = "";
+
+    	String[] numList = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+    	
+        for()
+    	return Integer.parseInt(str);
+    }
+
+}

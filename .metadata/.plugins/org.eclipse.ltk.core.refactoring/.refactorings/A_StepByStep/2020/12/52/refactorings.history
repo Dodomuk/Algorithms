@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;i_math_1&apos; to &apos;i_math&apos;&#x0D;&#x0A;- Original project: &apos;A_StepByStep&apos;&#x0D;&#x0A;- Original element: &apos;A_StepByStep/src/i_math_1&apos;&#x0D;&#x0A;- Renamed element: &apos;A_StepByStep/src/i_math&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;i_math_1&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;i_math_1" name="i_math" qualified="false" references="true" stamp="1608546605794" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;i_math.Rgt_Square.java&apos; to &apos;Rgt_triangle.java&apos;&#x0D;&#x0A;- Original project: &apos;A_StepByStep&apos;&#x0D;&#x0A;- Original element: &apos;i_math.Rgt_Square.java&apos;&#x0D;&#x0A;- Renamed element: &apos;i_math.Rgt_triangle.java&apos;" description="Rename compilation unit &apos;Rgt_Square.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;i_math{Rgt_Square.java" name="Rgt_triangle.java" references="false" stamp="1609234758623" version="1.0"/>
+</session>

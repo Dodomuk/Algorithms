@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;f_function.Main&apos; to &apos;Hansoo_PMYversion&apos;&#x0D;&#x0A;- Original project: &apos;A_StepByStep&apos;&#x0D;&#x0A;- Original element: &apos;f_function.Main&apos;&#x0D;&#x0A;- Renamed element: &apos;f_function.Hansoo_PMYversion&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Main&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;f_function{Main.java[Main" matchStrategy="1" name="Hansoo_PMYversion" qualified="false" references="true" similarDeclarations="false" stamp="1606208251017" textual="false" version="1.0"/>
+</session>
