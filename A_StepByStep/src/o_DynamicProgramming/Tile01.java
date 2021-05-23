@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class Tile01 {
 
 	
-	static int[] res;
+	static int[] res = new int[1000001];
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,33 +17,30 @@ public class Tile01 {
 		try {
 		
 			int n = Integer.parseInt(br.readLine());
-                res = new int[n+1];
-				res[n] = numCase(n)% 15746;
 			
+			for (int i = 1; i < 4; i++) {
+				res[i] = i;	
+			}
 			
-			System.out.println(res[n]);
+			System.out.println(numCase(n));
 			
 			br.close();
 		} catch (NumberFormatException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+	
 		
 	}
+	
+	
 	public static int numCase(int num) {
 		
-		if(res[num] != 0) {
-			return res[num];
-		}
-		
-		if(num <= 3) {
-			return res[num] = num;
-		}else {
-		res[num] = numCase(num-1) + numCase(num-2);
-		}
+     if(res[num] == 0) {
+		return res[num] = (numCase(num-1) + numCase(num-2))% 15746;
+     }else {
 		return res[num];
+     }
 	}
 
 }
