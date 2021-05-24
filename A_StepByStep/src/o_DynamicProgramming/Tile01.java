@@ -18,7 +18,7 @@ public class Tile01 {
 		
 			int n = Integer.parseInt(br.readLine());
 			
-			for (int i = 1; i < 4; i++) {
+			for (int i = 1; i < 3; i++) {
 				res[i] = i;	
 			}
 			
