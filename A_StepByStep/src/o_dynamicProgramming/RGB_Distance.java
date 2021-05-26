@@ -1,4 +1,4 @@
-package o_DynamicProgramming;
+package o_dynamicProgramming;
 
 import java.io.BufferedReader;
 import java.io.IOException;
