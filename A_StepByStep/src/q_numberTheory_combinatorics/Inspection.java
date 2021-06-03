@@ -29,7 +29,7 @@ public class Inspection {
 				System.out.print(i + " ");
 			}
 		}
-
+		System.out.println(check);
 		
 	}
 	
