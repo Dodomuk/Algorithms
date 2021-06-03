@@ -1,4 +1,4 @@
-package q_hydrostatics_combinatorics;
+package q_numberTheory_combinatorics;
 
 import java.io.BufferedReader;
 import java.io.IOException;
