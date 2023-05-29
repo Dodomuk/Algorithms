@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;g_string.alpa.java&apos; to &apos;Alpa.java&apos;&#x0D;&#x0A;- Original project: &apos;A_StepByStep&apos;&#x0D;&#x0A;- Original element: &apos;g_string.alpa.java&apos;&#x0D;&#x0A;- Renamed element: &apos;g_string.Alpa.java&apos;" description="Rename compilation unit &apos;alpa.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;g_string{alpa.java" name="Alpa.java" references="false" stamp="1607065576929" version="1.0"/>
-</session>
