@@ -28,7 +28,7 @@ function solution(n, m) {
 //num1 * num2 = gcd * lcm 과 같다는 원리를 이용하는 것이다.
 // lcm = (num1*num2) / gcd 이다.
 
-// 좋아요 👍🏼
+// 좋아요 👍🏼 TODO : 다시..보자
 function gcdlcm(a, b) {
   var r;
   for (var ab = a * b; (r = a % b); a = b, b = r) {
