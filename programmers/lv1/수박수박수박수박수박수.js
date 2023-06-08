@@ -6,4 +6,3 @@ function solution(n) {
 }
 0;
 
-console.log(solution(1));
