@@ -1,23 +1,22 @@
+//🧐 다시 풀어보기
 function solution(x, y) {
-  const numArr = Array(10).fill(0);
   const xArr = x.split('');
+  const yArr = y.split('');
+  let res = '';
 
-  for (let index = 0; index < x.length; index++) {
-    const num = xArr[index];
-    if (y.indexOf(num) !== -1) {
-      numArr[parseInt(num)] = numArr[parseInt(num)] + 1;
-      y = y.replace(num, '');
-    } else {
-      x = x.replaceAll(xArr[index], '');
-    }
+  for (let index = 0; index < 10; index++) {
+    const xCnt = xArr.filter((e) => parseInt(e) === index).length;
+    const yCnt = yArr.filter((e) => parseInt(e) === index).length;
+    res += String(index).repeat(Math.min(xCnt, yCnt));
   }
 
-  return (
-    numArr
-      .map((e, index) => (e ? String(index).repeat(e) : ''))
-      .reverse()
-      .join('') || '-1'
-  );
+  if (!res) return '-1';
+  if (!Number(res)) return '0';
+
+  return res
+    .split('')
+    .sort((a, b) => Number(b) - Number(a))
+    .join('');
 }
 
 console.log(solution('100', '2345'));
