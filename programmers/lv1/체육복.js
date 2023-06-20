@@ -12,13 +12,13 @@ function solution(n, lost, reserve) {
   }
 
   for (let index = 1; index <= n; index++) {
-    if (!obj[String(index)]) {
-      if (obj[String(index + 1)] === 2) {
-        obj[String(index)] = obj[String(index)] + 1;
-        obj[String(index + 1)] = obj[String(index + 1)] - 1;
-      } else if (obj[String(index - 1)] === 2) {
-        obj[String(index)] = obj[String(index)] + 1;
-        obj[String(index - 1)] = obj[String(index - 1)] - 1;
+    if (!obj[index]) {
+      if (obj[index - 1] === 2) {
+        obj[index]++;
+        obj[index - 1]--;
+      } else if (obj[index + 1] === 2) {
+        obj[index]++;
+        obj[index + 1]--;
       }
     }
   }
@@ -26,6 +26,18 @@ function solution(n, lost, reserve) {
   return Object.values(obj).filter((e) => e).length;
 }
 
-console.log(solution(5, [2, 4], [1, 3, 5], 5));
+// 좋아요 👍🏼
+// function solution(n, lost, reserve) {
+//   return (
+//     n -
+//     lost.filter((a) => {
+//       const b = reserve.find((r) => Math.abs(r - a) <= 1);
+//       if (!b) return true;
+//       reserve = reserve.filter((r) => r !== b);
+//     }).length
+//   );
+// }
+
+console.log(solution(5, [3, 5], [2, 4], 5));
 console.log(solution(5, [2, 4], [3], 4));
 console.log(solution(3, [3], [1], 2));
