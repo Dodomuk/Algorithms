@@ -1,10 +1,26 @@
 function solution(s) {
-    if (s === '()') return true
-    if (s === '(' || s === ')') return false
-    return solution(s.substring(0, ~~(s.length / 2)))
+    const sArr = s.split('');
+    let isNotMinus = 0;
+    for (const item of sArr) {
+        if (item === ')') {
+            if (isNotMinus === 0) {
+                return false;
+            } else {
+                isNotMinus--;
+            }
+        }
+        if (item === '(') isNotMinus++;
+    }
+    return isNotMinus ? false : true;
 }
 
-console.log(solution('()()'))
-console.log(solution("(())()"))
-console.log(solution(")()("))
-console.log(solution("(()("))
+// 좋아요 👍🏼
+// function is_pair(s){
+//     var result = s.match(/(\(|\))/g);
+//     return result[0] == '(' && result.length % 2 == 0 ? true : false
+//   }
+
+console.log(solution('()()'));
+console.log(solution('(())()'));
+console.log(solution(')()('));
+console.log(solution('(()('));
