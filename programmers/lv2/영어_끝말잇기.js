@@ -1,11 +1,6 @@
 function solution(n, words) {
     const stack = [words[0]]
     for (let index = 1; index < words.length; index++) {
-        // console.log('index', index)
-        // console.log('word 1', words[index])
-        // console.log('word 2', words[index - 1])
-        // console.log('stack', stack)
-        // console.log('include?', stack.includes(words[index]))
         if (words[index - 1].charAt(words[index - 1].length - 1) !== words[index].charAt(0) || stack.includes(words[index])) {
             return [((index + 1) % n) || n, ~~(index / n) + 1]
         } else {
@@ -15,6 +10,7 @@ function solution(n, words) {
     return [0, 0]
 }
 
+//
 // 좋아요 👍🏼
 // function solution(n, words) {
 //     let answer = 0;
