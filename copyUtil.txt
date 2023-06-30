@@ -3,3 +3,16 @@
 
 - 미흡 
 //🧐 다시 풀어보기 (  )
+
+- 백준 Node.js 입력 받기
+📌 한 줄 입력
+```
+let fs = require('fs');
+let input = fs.readFileSync('/dev/stdin').toString().split(' ');
+let 형변환 = 타입(input);
+```
+📌 여러 줄 입력
+```
+let fs = require('fs');
+let input = fs.readFileSync('/dev/stdin').toString().split('\n');
+```
