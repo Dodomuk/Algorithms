@@ -1,17 +1,7 @@
-// const fs = require('fs');
-// const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+// BFS 문제
 
-const input = `7
-0110100
-0110101
-1110101
-0000111
-0100000
-0111110
-0111001`
-  .toString()
-  .trim()
-  .split('\n');
+const fs = require('fs');
+const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
 
 const n = parseInt(input.shift());
 const arr = input.map((e) => e.split('').map((e) => parseInt(e)));
@@ -20,7 +10,7 @@ const returnArr = [];
 const xCheck = [-1, 1, 0, 0];
 const yCheck = [0, 0, -1, 1];
 const visitCheck = {};
-
+//
 solution();
 
 function solution() {
