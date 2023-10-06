@@ -10,7 +10,6 @@ const returnArr = [];
 const xCheck = [-1, 1, 0, 0];
 const yCheck = [0, 0, -1, 1];
 const visitCheck = {};
-//
 solution();
 
 function solution() {
