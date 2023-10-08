@@ -1,3 +1,4 @@
+//재풀이 요망
 function solution(name) {
   let answer = 0;
   let min_move = name.length - 1;
